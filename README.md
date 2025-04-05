@@ -18,5 +18,11 @@ app.static("/", "./public")
 ```
 DOES NOT WORK!!
 
+# TODO:
+- HTML Support
+- XML Support
+- Image Support
+- etc...
+
 # License
 This project is licensed under MIT License. Feel free to explore it and make pull requests!
