@@ -1,28 +1,31 @@
 # PyXpress
-A Basic HTTP-SERVER Module using Socket on Python Language.
+A basic HTTP server module using raw Python sockets.
 
-# Contribuitons
-Contribuitons are very welcome! 
+## Contributions
+Contributions are very welcome!  
+If you like this project, consider helping fix bugs and opening a pull request.
 
-If you'd like this project, consider doing a contribution on fixing bugs and make a pull request.
+## Known Bugs
+- **HTML redirect not supported**  
+  For some reason, redirecting to `.html` or files causes this error:
+  ```py
+  Server listening in: http://localhost:3000/
+  Error: slice indices must be integers or None or have an __index__ method
+  ```
 
-# Known Bugs:
-- HTML Non-Supported Redirecting. For some reason, i don't know why redirecting to HTML files lead to this error:
-```py
-Server listening in: http://localhost:3000/
-Error: slice indices must be integers or None or have an __index__ method
-```
-- Static function. Seriously, i don't know why the
-```py
-app.static("/", "./public")
-```
-DOES NOT WORK!!
+- **Static function doesn't work**  
+  Seriously, I don’t know why the following doesn’t work:
+  ```py
+  app.static("/", "./public")
+  ```
 
-# TODO:
-- HTML Support
-- XML Support
-- Image Support
-- etc...
+## TODO
+- HTML support  
+- XML support  
+- Image support  
+- More MIME types...
+- and more!
 
-# License
-This project is licensed under MIT License. Feel free to explore it and make pull requests!
+## License
+This project is licensed under the **MIT License**.  
+Feel free to explore, modify, and send pull requests!
